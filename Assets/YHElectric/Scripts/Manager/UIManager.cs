@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
             int index = i;
             transform.Find("bg/weather").GetChild(i).GetComponent<Button>().onClick.AddListener(() => BtnClick("SetWeather&"+index.ToString()));
         }
+        transform.Find("bg/timeSlider").GetComponent<Slider>().onValueChanged.AddListener(BtnClick);
         transform.Find("bg/topBar/water").GetComponent<Button>().onClick.AddListener(() => BtnClick("water"));
         transform.Find("bg/monitoring/transformer").GetComponent<Button>().onClick.AddListener(() => BtnClick("transformer"));
         transform.Find("bg/function/energyCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("energyCloud"));
@@ -35,6 +36,11 @@ public class UIManager : MonoBehaviour
     {
         print(str);
         UDPControl.instance.uDPClient.Send(str);
+    }
+    private void BtnClick(float value)
+    {
+        print(value);
+        UDPControl.instance.uDPClient.Send("timeSlider&"+value.ToString());
     }
     public void OnCamRot(Vector2 vector2)
     {
