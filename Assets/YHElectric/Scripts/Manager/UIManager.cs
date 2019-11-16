@@ -28,7 +28,7 @@ public class UIManager : MonoBehaviour
         //平台功能
         transform.Find("bg/function/energyCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("energyCloud"));
         //镜头操控
-        transform.Find("bg/roam").GetComponent<Button>().onClick.AddListener(() => BtnClick("roam"));
+        transform.Find("bg/roam").GetComponent<Button>().onClick.AddListener(() => { isRoam = !isRoam; BtnClick("roam", isRoam); });
         transform.Find("bg/cameraMove/cameraMoveUp").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraMoveUp"));
         transform.Find("bg/cameraMove/cameraMoveForward").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraMoveForward"));
         transform.Find("bg/cameraMove/cameraMoveDown").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraMoveDown"));
@@ -44,6 +44,12 @@ public class UIManager : MonoBehaviour
     {
         print(str);
         UDPControl.instance.uDPClient.Send(str);
+    }
+    bool isRoam=false;
+    private void BtnClick(string str,bool isBool)
+    {
+        print(str + "&" + isBool);
+        UDPControl.instance.uDPClient.Send(str+"&"+ isBool);
     }
     private void BtnClick(float value)
     {
