@@ -7406,7 +7406,7 @@ GameObject:
   - component: {fileID: 2065682519}
   - component: {fileID: 2065682518}
   m_Layer: 5
-  m_Name: Button (7)
+  m_Name: photovoltaic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

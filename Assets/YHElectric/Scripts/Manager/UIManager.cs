@@ -24,7 +24,9 @@ public class UIManager : MonoBehaviour
         //顶部展板
         transform.Find("bg/topBar/water").GetComponent<Button>().onClick.AddListener(() => BtnClick("water"));
         //实时监测
-        transform.Find("bg/monitoring/transformer").GetComponent<Button>().onClick.AddListener(() => BtnClick("transformer"));
+        transform.Find("bg/monitoring/transformer").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring"+"&"+ "transformer"));
+        transform.Find("bg/monitoring/photovoltaic").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "photovoltaic"));
+        transform.Find("bg/monitoring/electricityRoom").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "electricityRoom"));
         //平台功能
         transform.Find("bg/function/energyCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("energyCloud"));
         //镜头操控
