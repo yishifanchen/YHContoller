@@ -4937,7 +4937,7 @@ GameObject:
   - component: {fileID: 1206480113}
   - component: {fileID: 1206480112}
   m_Layer: 5
-  m_Name: Button (8)
+  m_Name: electricityRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5533,7 +5533,7 @@ GameObject:
   - component: {fileID: 1457809894}
   - component: {fileID: 1457809893}
   m_Layer: 5
-  m_Name: Button (9)
+  m_Name: airConditioner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
