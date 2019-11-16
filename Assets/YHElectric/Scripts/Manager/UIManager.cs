@@ -13,6 +13,11 @@ public class UIManager : MonoBehaviour
     }
     private void Start()
     {
+        for (int i = 0; i < transform.Find("bg/weather").childCount; i++)
+        {
+            int index = i;
+            transform.Find("bg/weather").GetChild(i).GetComponent<Button>().onClick.AddListener(() => BtnClick("SetWeather&"+index.ToString()));
+        }
         transform.Find("bg/topBar/water").GetComponent<Button>().onClick.AddListener(() => BtnClick("water"));
         transform.Find("bg/monitoring/transformer").GetComponent<Button>().onClick.AddListener(() => BtnClick("transformer"));
         transform.Find("bg/function/energyCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("energyCloud"));
@@ -20,10 +25,6 @@ public class UIManager : MonoBehaviour
         transform.Find("bg/cameraMove/cameraMoveForward").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraMoveForward"));
         transform.Find("bg/cameraMove/cameraMoveDown").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraMoveDown"));
         transform.Find("bg/cameraMove/cameraMoveBack").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraMoveBack"));
-        //transform.Find("bg/cameraRot/cameraRotUp").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraRotUp"));
-        //transform.Find("bg/cameraRot/cameraRotDown").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraRotDown"));
-        //transform.Find("bg/cameraRot/cameraRotLeft").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraRotLeft"));
-        //transform.Find("bg/cameraRot/cameraRotRight").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraRotRight&123.3"));
         transform.Find("bg/closeBtn").GetComponent<Button>().onClick.AddListener(() => BtnClick("closeBtn"));
     }
     private void Update()
