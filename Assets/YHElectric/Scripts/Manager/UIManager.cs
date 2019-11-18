@@ -21,14 +21,17 @@ public class UIManager : MonoBehaviour
         }
         //时间
         transform.Find("bg/timeSlider").GetComponent<Slider>().onValueChanged.AddListener(BtnClick);
-        //顶部展板
-        transform.Find("bg/topBar/water").GetComponent<Button>().onClick.AddListener(() => BtnClick("water"));
-        //实时监测
-        transform.Find("bg/monitoring/transformer").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring"+"&"+ "transformer"));
-        transform.Find("bg/monitoring/photovoltaic").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "photovoltaic"));
-        transform.Find("bg/monitoring/electricityRoom").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "electricityRoom"));
-        //平台功能
-        transform.Find("bg/function/energyCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("energyCloud"));
+        //顶部展板   displayBoard
+        transform.Find("bg/topBar/water").GetComponent<Button>().onClick.AddListener(() => BtnClick("D_water"));
+        //实时监测  monitor
+        transform.Find("bg/monitoring/transformer").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring"+"&"+ "M_transformer"));
+        transform.Find("bg/monitoring/photovoltaic").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_photovoltaic"));
+        transform.Find("bg/monitoring/electricityRoom").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_workshop"));
+        //平台功能   function
+        transform.Find("bg/function/energyCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("F_energyCloud"));
+
+        //策略    strategy
+
         //镜头操控
         transform.Find("bg/roam").GetComponent<Button>().onClick.AddListener(() => { isRoam = !isRoam; BtnClick("roam", isRoam); });
         transform.Find("bg/cameraMove/cameraMoveUp").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraMoveUp"));
