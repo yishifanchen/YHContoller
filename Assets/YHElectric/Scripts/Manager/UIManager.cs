@@ -22,22 +22,26 @@ public class UIManager : MonoBehaviour
         //时间
         transform.Find("bg/timeSlider").GetComponent<Slider>().onValueChanged.AddListener(BtnClick);
         //顶部展板   displayBoard
-        transform.Find("bg/topBar/water").GetComponent<Button>().onClick.AddListener(() => BtnClick("D_water"));
+        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_water").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard"+"&"+"D_water"));
+        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_electric").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&"+"D_electric"));
+        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_gas").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_gas"));
+        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_coal").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_coal"));
+        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_energy").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_energy"));
+        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_photovoltaic").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_photovoltaic"));
+        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_chargingPile").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_chargingPile"));
         //实时监测  monitor
-        transform.Find("bg/monitoring/transformer").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring"+"&"+ "M_transformer"));
-        transform.Find("bg/monitoring/photovoltaic").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_photovoltaic"));
-        transform.Find("bg/monitoring/electricityRoom").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_workshop"));
+        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_transformer").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring"+"&"+ "M_transformer"));
+        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_photovoltaic").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_photovoltaic"));
+        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_workshop").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_workshop"));
         //平台功能   function
-        transform.Find("bg/function/energyCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("F_energyCloud"));
+        transform.Find("bg/function/bg/Scroll View/Viewport/Content/F_energyCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("function" + "&" + "F_energyCloud"));
+        transform.Find("bg/function/bg/Scroll View/Viewport/Content/F_workshop").GetComponent<Button>().onClick.AddListener(() => BtnClick("function" + "&" + "F_workshop"));
 
         //策略    strategy
-
+        transform.Find("bg/strategy/bg/Scroll View/Viewport/Content/S_transformer").GetComponent<Button>().onClick.AddListener(() => BtnClick("strategy" + "&" + "S_transformer"));
         //镜头操控
         transform.Find("bg/roam").GetComponent<Button>().onClick.AddListener(() => { isRoam = !isRoam; BtnClick("roam", isRoam); });
-        transform.Find("bg/cameraMove/cameraMoveUp").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraMoveUp"));
-        transform.Find("bg/cameraMove/cameraMoveForward").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraMoveForward"));
-        transform.Find("bg/cameraMove/cameraMoveDown").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraMoveDown"));
-        transform.Find("bg/cameraMove/cameraMoveBack").GetComponent<Button>().onClick.AddListener(() => BtnClick("cameraMoveBack"));
+        
         //关闭
         transform.Find("bg/closeBtn").GetComponent<Button>().onClick.AddListener(() => BtnClick("closeBtn"));
     }
@@ -72,5 +76,17 @@ public class UIManager : MonoBehaviour
     {
         UDPControl.instance.uDPClient.Send("OnCamRotX&" + 0);
         UDPControl.instance.uDPClient.Send("OnCamRotY&" + 0);
+    }
+    public void OnCamMove(Vector2 vector2)
+    {
+        if (timer < 0.2f) return;
+        UDPControl.instance.uDPClient.Send("OnCamMoveX&" + vector2.x);
+        UDPControl.instance.uDPClient.Send("OnCamMoveY&" + vector2.y);
+        timer = 0;
+    }
+    public void OnCamMoveEnd()
+    {
+        UDPControl.instance.uDPClient.Send("OnCamMoveX&" + 0);
+        UDPControl.instance.uDPClient.Send("OnCamMoveY&" + 0);
     }
 }
