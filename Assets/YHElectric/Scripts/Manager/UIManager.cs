@@ -25,6 +25,12 @@ public class UIManager : MonoBehaviour
         }
         //时间
         transform.Find("bg/timeSlider").GetComponent<Slider>().onValueChanged.AddListener(BtnClick);
+        //预测
+        transform.Find("bg/forecasting").GetComponent<Button>().onClick.AddListener(() => BtnClick("tip" + "&" + "forecasting"));
+        //公告
+        transform.Find("bg/notice").GetComponent<Button>().onClick.AddListener(() => BtnClick("tip" + "&" + "notice"));
+        //告警
+        transform.Find("bg/alarm").GetComponent<Button>().onClick.AddListener(() => BtnClick("tip" + "&" + "alarm"));
         //顶部展板   displayBoard
         transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_water").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard"+"&"+"D_water"));
         transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_electric").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&"+"D_electric"));
