@@ -46,6 +46,8 @@ public class UIManager : MonoBehaviour
         //平台功能   function
         transform.Find("bg/function/bg/Scroll View/Viewport/Content/F_energyCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("function" + "&" + "F_energyCloud"));
         transform.Find("bg/function/bg/Scroll View/Viewport/Content/F_photovoltaicCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("function" + "&" + "F_photovoltaicCloud"));
+        transform.Find("bg/function/bg/Scroll View/Viewport/Content/F_energyAnalysis").GetComponent<Button>().onClick.AddListener(() => BtnClick("function" + "&" + "F_energyAnalysis"));
+        transform.Find("bg/function/bg/Scroll View/Viewport/Content/F_marketTransaction").GetComponent<Button>().onClick.AddListener(() => BtnClick("function" + "&" + "F_marketTransaction"));
 
         //策略    strategy
         transform.Find("bg/strategy/bg/Scroll View/Viewport/Content/S_energyAnalysis").GetComponent<Button>().onClick.AddListener(() => BtnClick("strategy" + "&" + "S_energyAnalysis"));
