@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using LitJson;
+using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,9 +9,11 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
     private float timer = 0;
+    private string targetIP;
     void Awake()
     {
         instance = this;
+        LoadSetting();
     }
     private void Start()
     {
@@ -49,44 +53,50 @@ public class UIManager : MonoBehaviour
     {
         timer += Time.deltaTime;
     }
+    void LoadSetting()
+    {
+        string text = System.IO.File.ReadAllText(Application.streamingAssetsPath + "/UrlSetting.json");
+        JsonData jd = JsonMapper.ToObject(text);
+        targetIP = jd["URL"].ToString();
+    }
     private void BtnClick(string str)
     {
         print(str);
-        UDPControl.instance.uDPClient.Send(str);
+        UDPControl.instance.uDPClient.Send(str, targetIP.ToString());
     }
     bool isRoam=false;
     private void BtnClick(string str,bool isBool)
     {
         print(str + "&" + isBool);
-        UDPControl.instance.uDPClient.Send(str+"&"+ isBool);
+        UDPControl.instance.uDPClient.Send(str+"&"+ isBool, targetIP.ToString());
     }
     private void BtnClick(float value)
     {
         print(value);
-        UDPControl.instance.uDPClient.Send("timeSlider&"+value.ToString());
+        UDPControl.instance.uDPClient.Send("timeSlider&"+value.ToString(), targetIP.ToString());
     }
     public void OnCamRot(Vector2 vector2)
     {
         if (timer < 0.3f) return;
-        UDPControl.instance.uDPClient.Send("OnCamRotX&" + vector2.x);
-        UDPControl.instance.uDPClient.Send("OnCamRotY&" + vector2.y);
+        UDPControl.instance.uDPClient.Send("OnCamRotX&" + vector2.x, targetIP.ToString());
+        UDPControl.instance.uDPClient.Send("OnCamRotY&" + vector2.y, targetIP.ToString());
         timer = 0;
     }
     public void OnCamRotEnd()
     {
-        UDPControl.instance.uDPClient.Send("OnCamRotX&" + 0);
-        UDPControl.instance.uDPClient.Send("OnCamRotY&" + 0);
+        UDPControl.instance.uDPClient.Send("OnCamRotX&" + 0, targetIP.ToString());
+        UDPControl.instance.uDPClient.Send("OnCamRotY&" + 0, targetIP.ToString());
     }
     public void OnCamMove(Vector2 vector2)
     {
         if (timer < 0.3f) return;
-        UDPControl.instance.uDPClient.Send("OnCamMoveX&" + vector2.x);
-        UDPControl.instance.uDPClient.Send("OnCamMoveY&" + vector2.y);
+        UDPControl.instance.uDPClient.Send("OnCamMoveX&" + vector2.x, targetIP.ToString());
+        UDPControl.instance.uDPClient.Send("OnCamMoveY&" + vector2.y, targetIP.ToString());
         timer = 0;
     }
     public void OnCamMoveEnd()
     {
-        UDPControl.instance.uDPClient.Send("OnCamMoveX&" + 0);
-        UDPControl.instance.uDPClient.Send("OnCamMoveY&" + 0);
+        UDPControl.instance.uDPClient.Send("OnCamMoveX&" + 0, targetIP.ToString());
+        UDPControl.instance.uDPClient.Send("OnCamMoveY&" + 0, targetIP.ToString());
     }
 }
