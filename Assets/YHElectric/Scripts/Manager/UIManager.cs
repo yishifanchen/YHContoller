@@ -67,7 +67,7 @@ public class UIManager : MonoBehaviour
     }
     public void OnCamRot(Vector2 vector2)
     {
-        if (timer < 0.1f) return;
+        if (timer < 0.3f) return;
         UDPControl.instance.uDPClient.Send("OnCamRotX&" + vector2.x);
         UDPControl.instance.uDPClient.Send("OnCamRotY&" + vector2.y);
         timer = 0;
@@ -79,7 +79,7 @@ public class UIManager : MonoBehaviour
     }
     public void OnCamMove(Vector2 vector2)
     {
-        if (timer < 0.1f) return;
+        if (timer < 0.3f) return;
         UDPControl.instance.uDPClient.Send("OnCamMoveX&" + vector2.x);
         UDPControl.instance.uDPClient.Send("OnCamMoveY&" + vector2.y);
         timer = 0;
