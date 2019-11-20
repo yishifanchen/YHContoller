@@ -91,8 +91,8 @@ public class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
         oldPos = eventData.delta;
         if (isMoving)
         {
-            UDPControl.instance.uDPClient.Send("mouseMoveX&" + eventData.delta.x);
-            UDPControl.instance.uDPClient.Send("mouseMoveY&" + eventData.delta.y);
+            UDPControl.instance.uDPClient.Send("mouseMoveX&" + eventData.delta.x/2);
+            UDPControl.instance.uDPClient.Send("mouseMoveY&" + eventData.delta.y/2);
         }
     }
     /// <summary>
