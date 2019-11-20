@@ -37,7 +37,7 @@ public class UDPControl : MonoBehaviour
     }
     private void OnReceive(string str)
     {
-        print(str);
+        //print(str);
     }
     int mousex, mousey;
     bool isClick = false;

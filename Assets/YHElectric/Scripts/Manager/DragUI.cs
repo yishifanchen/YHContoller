@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler,IPointerClickHandler,IPointerDownHandler
 {
     /// <summary>
     /// UI和指针的位置偏移量
@@ -65,12 +65,13 @@ public class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
         //更新位置
         rt.position = new Vector3(rangeX, rangeY, 0);
     }
-
+    bool isDrag = false;
     /// <summary>
     /// 开始拖拽
     /// </summary>
     public void OnBeginDrag(PointerEventData eventData)
     {
+        isDrag = true;
         Vector3 globalMousePos;
 
         //将屏幕坐标转换成世界坐标
@@ -94,7 +95,6 @@ public class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
             UDPControl.instance.uDPClient.Send("mouseMoveY&" + eventData.delta.y);
         }
     }
-
     /// <summary>
     /// 结束拖拽
     /// </summary>
@@ -117,5 +117,18 @@ public class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
         {
             rt.position = offset + globalMousePos;
         }
+    }
+
+    void IPointerClickHandler.OnPointerClick(PointerEventData eventData)
+    {
+        if (!isDrag)
+        {
+            UDPControl.instance.uDPClient.Send("mouseClick");
+        }
+    }
+
+    void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
+    {
+        isDrag = false;
     }
 }
