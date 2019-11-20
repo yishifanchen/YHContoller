@@ -40,15 +40,15 @@ public class UIManager : MonoBehaviour
         transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_photovoltaic").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_photovoltaic"));
         transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_chargingPile").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_chargingPile"));
         //实时监测  monitor
-        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_transformer").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring"+"&"+ "M_transformer"));
+        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_electricRoom").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring"+"&"+ "M_electricRoom"));
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_photovoltaic").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_photovoltaic"));
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_workshop").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_workshop"));
         //平台功能   function
         transform.Find("bg/function/bg/Scroll View/Viewport/Content/F_energyCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("function" + "&" + "F_energyCloud"));
-        transform.Find("bg/function/bg/Scroll View/Viewport/Content/F_workshop").GetComponent<Button>().onClick.AddListener(() => BtnClick("function" + "&" + "F_workshop"));
+        transform.Find("bg/function/bg/Scroll View/Viewport/Content/F_photovoltaicCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("function" + "&" + "F_photovoltaicCloud"));
 
         //策略    strategy
-        transform.Find("bg/strategy/bg/Scroll View/Viewport/Content/S_transformer").GetComponent<Button>().onClick.AddListener(() => BtnClick("strategy" + "&" + "S_transformer"));
+        transform.Find("bg/strategy/bg/Scroll View/Viewport/Content/S_energyAnalysis").GetComponent<Button>().onClick.AddListener(() => BtnClick("strategy" + "&" + "S_energyAnalysis"));
         //镜头操控
         transform.Find("bg/roam").GetComponent<Button>().onClick.AddListener(() => { isRoam = !isRoam; BtnClick("roam", isRoam); });
         

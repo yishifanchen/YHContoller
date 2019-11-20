@@ -2067,7 +2067,7 @@ GameObject:
   - component: {fileID: 374508045}
   - component: {fileID: 374508044}
   m_Layer: 5
-  m_Name: S_transformer
+  m_Name: S_energyAnalysis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7879,7 +7879,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u53D8\u538B\u5668"
+  m_Text: "\u914D\u7535\u5BA4"
 --- !u!222 &1159428898
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8607,7 +8607,7 @@ GameObject:
   - component: {fileID: 1258065450}
   - component: {fileID: 1258065449}
   m_Layer: 5
-  m_Name: F_workshop
+  m_Name: F_photovoltaicCloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8901,7 +8901,7 @@ GameObject:
   - component: {fileID: 1366577279}
   - component: {fileID: 1366577278}
   m_Layer: 5
-  m_Name: M_transformer
+  m_Name: M_electricRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9271,7 +9271,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4F01\u4E1A\u5168\u666F"
+  m_Text: "\u5149\u4F0F\u4E91"
 --- !u!222 &1414537743
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11648,7 +11648,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u65E0"
+  m_Text: "\u80FD\u6E90\u5206\u6790"
 --- !u!222 &1803383764
 CanvasRenderer:
   m_ObjectHideFlags: 0
