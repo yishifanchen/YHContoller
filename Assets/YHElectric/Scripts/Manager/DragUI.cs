@@ -88,9 +88,8 @@ public class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     {
         SetDraggedPosition(eventData);
         oldPos = eventData.delta;
-        if (isMoving&&timer>0.2f)
+        if (isMoving)
         {
-            timer = 0;
             UDPControl.instance.uDPClient.Send("mouseMoveX&" + eventData.delta.x);
             UDPControl.instance.uDPClient.Send("mouseMoveY&" + eventData.delta.y);
         }
