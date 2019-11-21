@@ -43,6 +43,14 @@ public class UIManager : MonoBehaviour
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_electricRoom").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring"+"&"+ "M_electricRoom"));
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_photovoltaic").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_photovoltaic"));
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_workshop").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_workshop"));
+        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_line1").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_line1"));
+        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_line2").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_line2"));
+        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_streetLamp").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_streetLamp"));
+        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_chargingPile").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_chargingPile"));
+        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_crane").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_crane"));
+        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_externalAirConditioner").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_externalAirConditioner"));
+        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_XMXSA").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_XMXSA"));
+        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_energyTank").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_energyTank"));
         //平台功能   function
         transform.Find("bg/function/bg/Scroll View/Viewport/Content/F_energyCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("function" + "&" + "F_energyCloud"));
         transform.Find("bg/function/bg/Scroll View/Viewport/Content/F_photovoltaicCloud").GetComponent<Button>().onClick.AddListener(() => BtnClick("function" + "&" + "F_photovoltaicCloud"));
