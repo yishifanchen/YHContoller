@@ -30,11 +30,6 @@ public class GameManager : MonoBehaviour
         }
         LoadSetting();
     }
-
-    void Update()
-    {
-        
-    }
     /// <summary>
     /// 加载h5配置文件
     /// </summary>
