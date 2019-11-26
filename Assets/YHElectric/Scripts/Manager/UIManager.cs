@@ -71,7 +71,7 @@ public class UIManager : MonoBehaviour
         transform.Find("bg/closeBtn").GetComponent<Button>().onClick.AddListener(() => BtnClick("closeBtn"));
 
         //边栏
-        transform.Find("bg/sideBar").GetComponent<Button>().onClick.AddListener(() => BtnClick("sideBar"));
+        transform.Find("bg/sidebar").GetComponent<Button>().onClick.AddListener(() => BtnClick("sidebar"));
     }
     private void Update()
     {
