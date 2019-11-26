@@ -170,7 +170,18 @@
             "pivotY": "0.5",
             "url": "http://192.168.0.114:801/web/guangfu.html",
             "method": [
-              
+               {
+                "name": "一次图",
+                "value": "1"
+              },
+              {
+                "name": "实时电量",
+                "value": "2"
+              },
+              {
+                "name": "实时电1量",
+                "value": "2"
+              }
             ]
           },
           "M_workshop": {
@@ -261,7 +272,18 @@
             "pivotY": "0.5",
             "url": "http://192.168.0.123:1111/%E5%82%A8%E8%83%BD%E4%BA%91%E5%85%89%E4%BC%8F%E4%BA%91%E6%99%BA%E6%85%A7%E8%B7%AF%E7%81%AF%E7%A9%BA%E8%B0%83/kt.html",
             "method": [
-              
+               {
+                "name": "一次图",
+                "value": "1"
+              },
+              {
+                "name": "实时电量",
+                "value": "2"
+              },
+              {
+                "name": "实时电1量",
+                "value": "2"
+              }
             ]
           },
           "M_XMXSA": {
