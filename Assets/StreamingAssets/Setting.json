@@ -1,0 +1,460 @@
+{
+  "Setting": [
+    {
+      "displayBoard": [
+        {
+          "D_water": {
+            "name": "水",
+            "x": "-770",
+            "y": "320",
+            "width": "377",
+            "height": "380",
+            "pivotX": "0.5",
+            "pivotY": "1",
+            "url": "http://192.168.0.123:1111/%E7%94%A8%E6%B0%B4.html",
+            "method": [
+              
+            ]
+          },
+          "D_electric": {
+            "name": "电",
+            "x": "-512",
+            "y": "328",
+            "width": "400",
+            "height": "420",
+            "pivotX": "0.5",
+            "pivotY": "1",
+            "url": "http://192.168.0.123:1111/%E7%94%A8%E7%94%B5.html",
+            "method": [
+              {
+                "name": "一次图",
+                "value": "1"
+              },
+              {
+                "name": "实时电量",
+                "value": "2"
+              },
+              {
+                "name": "实时电量1",
+                "value": "2"
+              }
+            ]
+          },
+          "D_gas": {
+            "name": "气",
+            "x": "-250",
+            "y": "323",
+            "width": "557",
+            "height": "519",
+            "pivotX": "0.5",
+            "pivotY": "1",
+            "url": "http://192.168.0.123:1111/%E7%94%A8%E6%B0%94.html",
+            "method": [
+              {
+                "name": "一次图",
+                "value": "1"
+              },
+              {
+                "name": "实时电量",
+                "value": "2"
+              }
+            ]
+          },
+          "D_coal": {
+            "name": "暖",
+            "x": "0",
+            "y": "323",
+            "width": "557",
+            "height": "518",
+            "pivotX": "0.5",
+            "pivotY": "1",
+            "url": "http://192.168.0.123:1111/%E7%94%A8%E7%83%AD.html",
+            "method": [
+              {
+                "name": "一次图",
+                "value": "1"
+              },
+              {
+                "name": "实时电量",
+                "value": "2"
+              }
+            ]
+          },
+          "D_energy": {
+            "name": "储能",
+            "x": "250",
+            "y": "328",
+            "width": "400",
+            "height": "420",
+            "pivotX": "0.5",
+            "pivotY": "1",
+            "url": "http://192.168.0.123:1111/%E5%82%A8%E8%83%BD.html",
+            "method": [
+              {
+                "name": "一次图",
+                "value": "1"
+              },
+              {
+                "name": "实时电量",
+                "value": "2"
+              },
+              {
+                "name": "实时电1量",
+                "value": "2"
+              }
+            ]
+          },
+          "D_photovoltaic": {
+            "name": "光伏",
+            "x": "512",
+            "y": "328",
+            "width": "380",
+            "height": "380",
+            "pivotX": "0.5",
+            "pivotY": "1",
+            "url": "http://192.168.0.123:1111/%E5%85%89%E4%BC%8F.html",
+            "method": [
+              
+            ]
+          },
+          "D_chargingPile": {
+            "name": "充电桩",
+            "x": "770",
+            "y": "328",
+            "width": "420",
+            "height": "420",
+            "pivotX": "0.5",
+            "pivotY": "1",
+            "url": "http://192.168.0.123:1111/%E5%85%85%E7%94%B5%E6%A1%A9.html",
+            "method": [
+              
+            ]
+          }
+        }
+      ],
+      "monitor": [
+        {
+          "M_panoramaEnterprise": {
+            "name": "企业全景",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/%E4%BC%81%E4%B8%9A%E5%85%A8%E6%99%AF/qyqj.html",
+            "method": [
+              
+            ]
+          },
+          "M_electricRoom": {
+            "name": "配电室",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/%E9%85%8D%E7%94%B5%E5%AE%A4/yh%E9%85%8D%E7%94%B5%E5%AE%A4H5/peidiand.html",
+            "method": [
+              
+            ]
+          },
+          "M_photovoltaic": {
+            "name": "光伏板",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.114:801/web/guangfu.html",
+            "method": [
+              
+            ]
+          },
+          "M_workshop": {
+            "name": "厂房",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/yh%E5%8E%82%E6%88%BFH5/index2.html",
+            "method": [
+              
+            ]
+          },
+          "M_line1": {
+            "name": "一号生产线",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "https://www.baidu.com/index.php?tn=monline_6_dg",
+            "method": [
+              
+            ]
+          },
+          "M_line2": {
+            "name": "二号生产线",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "https://www.baidu.com/index.php?tn=monline_6_dg",
+            "method": [
+              
+            ]
+          },
+          "M_streetLamp": {
+            "name": "路灯",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/%E5%82%A8%E8%83%BD%E4%BA%91%E5%85%89%E4%BC%8F%E4%BA%91%E6%99%BA%E6%85%A7%E8%B7%AF%E7%81%AF%E7%A9%BA%E8%B0%83/zhld.html",
+            "method": [
+              
+            ]
+          },
+          "M_chargingPile": {
+            "name": "充电桩",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "https://www.baidu.com/index.php?tn=monline_6_dg",
+            "method": [
+              
+            ]
+          },
+          "M_crane": {
+            "name": "吊机",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "https://www.baidu.com/index.php?tn=monline_6_dg",
+            "method": [
+              
+            ]
+          },
+          "M_externalAirConditioner": {
+            "name": "空调外机",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/%E5%82%A8%E8%83%BD%E4%BA%91%E5%85%89%E4%BC%8F%E4%BA%91%E6%99%BA%E6%85%A7%E8%B7%AF%E7%81%AF%E7%A9%BA%E8%B0%83/kt.html",
+            "method": [
+              
+            ]
+          },
+          "M_XMXSA": {
+            "name": "低压配电箱",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "https://www.baidu.com/index.php?tn=monline_6_dg",
+            "method": [
+              
+            ]
+          },
+          "M_energyTank": {
+            "name": "储能箱",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "https://www.baidu.com/index.php?tn=monline_6_dg",
+            "method": [
+              
+            ]
+          }
+        }
+      ],
+      "function": [
+        {
+          "F_energyCloud": {
+            "name": "储能云",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/%E5%82%A8%E8%83%BD%E4%BA%91/cny.html",
+            "method": [
+              
+            ]
+          },
+          "F_photovoltaicCloud": {
+            "name": "光伏云",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/%E5%82%A8%E8%83%BD%E4%BA%91%E5%85%89%E4%BC%8F%E4%BA%91%E6%99%BA%E6%85%A7%E8%B7%AF%E7%81%AF%E7%A9%BA%E8%B0%83/gfy.html",
+            "method": [
+              
+            ]
+          },
+          "F_energyAnalysis": {
+            "name": "能源分析",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/YH/analyze.html",
+            "method": [
+              
+            ]
+          },
+          "F_marketTransaction": {
+            "name": "市场交易",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/%E5%B8%82%E5%9C%BA%E4%BA%A4%E6%98%93/%E5%B8%82%E5%9C%BA%E4%BA%A4%E6%98%93.html",
+            "method": [
+              
+            ]
+          }
+        }
+      ],
+      "strategy": [
+        {
+          "S_demandResponse": {
+            "name": "需求响应",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/%E7%9B%8A%E5%92%8Ch5%E6%95%B4%E5%90%88/demand-response.html",
+            "method": [
+              
+            ]
+          },
+          "S_executionStatistics": {
+            "name": "执行统计",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/%E7%9B%8A%E5%92%8Ch5%E6%95%B4%E5%90%88/statistics-infor.html",
+            "method": [
+              
+            ]
+          }
+        }
+      ],
+      "tip": [
+        {
+          "forecasting": {
+            "name": "负荷预测",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "https://www.baidu.com/index.php?tn=monline_6_dg",
+            "method": [
+              
+            ]
+          },
+          "notice": {
+            "name": "公告",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/%E7%9B%8A%E5%92%8Ch5%E6%95%B4%E5%90%88/notice.html",
+            "method": [
+              
+            ]
+          },
+          "alarm": {
+            "name": "告警",
+            "x": "0",
+            "y": "-40",
+            "width": "1850",
+            "height": "1000",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/gaojing.html",
+            "method": [
+              
+            ]
+          }
+        }
+      ],
+      "displayPanel": [
+        {
+          "display": {
+            "name": "首页展板",
+            "x": "0",
+            "y": "450",
+            "width": "1792",
+            "height": "125",
+            "pivotX": "0.5",
+            "pivotY": "1",
+            "url": "http://192.168.0.123:1111/%E9%A6%96%E9%A1%B5.html",
+            "method": [
+              
+            ]
+          }
+        }
+      ],
+      "modelPanel": [
+        {
+          "model": {
+            "name": "模型面板",
+            "x": "-438",
+            "y": "-278",
+            "width": "840",
+            "height": "410",
+            "pivotX": "0.5",
+            "pivotY": "0.5",
+            "url": "http://192.168.0.123:1111/%E9%A6%96%E9%A1%B5.html",
+            "method": [
+              
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

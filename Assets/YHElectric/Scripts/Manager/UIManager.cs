@@ -31,14 +31,15 @@ public class UIManager : MonoBehaviour
         transform.Find("bg/notice").GetComponent<Button>().onClick.AddListener(() => BtnClick("tip" + "&" + "notice"));
         //告警
         transform.Find("bg/alarm").GetComponent<Button>().onClick.AddListener(() => BtnClick("tip" + "&" + "alarm"));
+        /*
         //顶部展板   displayBoard
-        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_water").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard"+"&"+"D_water"));
-        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_electric").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&"+"D_electric"));
-        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_gas").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_gas"));
-        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_coal").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_coal"));
-        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_energy").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_energy"));
-        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_photovoltaic").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_photovoltaic"));
-        transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_chargingPile").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_chargingPile"));
+        transform.Find("bg/displayBoard/bg/Scroll View/Viewport/Content/D_water").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard"+"&"+"D_water"));
+        transform.Find("bg/displayBoard/bg/Scroll View/Viewport/Content/D_electric").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&"+"D_electric"));
+        transform.Find("bg/displayBoard/bg/Scroll View/Viewport/Content/D_gas").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_gas"));
+        transform.Find("bg/displayBoard/bg/Scroll View/Viewport/Content/D_coal").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_coal"));
+        transform.Find("bg/displayBoard/bg/Scroll View/Viewport/Content/D_energy").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_energy"));
+        transform.Find("bg/displayBoard/bg/Scroll View/Viewport/Content/D_photovoltaic").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_photovoltaic"));
+        transform.Find("bg/displayBoard/bg/Scroll View/Viewport/Content/D_chargingPile").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_chargingPile"));
         //实时监测  monitor
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_panoramaEnterprise").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_panoramaEnterprise"));
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_electricRoom").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring"+"&"+ "M_electricRoom"));
@@ -61,6 +62,8 @@ public class UIManager : MonoBehaviour
         //策略    strategy
         transform.Find("bg/strategy/bg/Scroll View/Viewport/Content/S_demandResponse").GetComponent<Button>().onClick.AddListener(() => BtnClick("strategy" + "&" + "S_demandResponse"));
         transform.Find("bg/strategy/bg/Scroll View/Viewport/Content/S_executionStatistics").GetComponent<Button>().onClick.AddListener(() => BtnClick("strategy" + "&" + "S_executionStatistics"));
+
+        */
         //镜头操控
         transform.Find("bg/roam").GetComponent<Button>().onClick.AddListener(() => { isRoam = !isRoam; BtnClick("roam", isRoam); });
         
@@ -78,18 +81,18 @@ public class UIManager : MonoBehaviour
         targetIP = jd["URL"].ToString();
         print(targetIP);
     }
-    private void BtnClick(string str)
+    public void BtnClick(string str)
     {
         print(str);
         UDPControl.instance.uDPClient.Send(str, targetIP.ToString());
     }
     bool isRoam=false;
-    private void BtnClick(string str,bool isBool)
+    public void BtnClick(string str,bool isBool)
     {
         print(str + "&" + isBool);
         UDPControl.instance.uDPClient.Send(str+"&"+ isBool, targetIP.ToString());
     }
-    private void BtnClick(float value)
+    public void BtnClick(float value)
     {
         print(value);
         UDPControl.instance.uDPClient.Send("timeSlider&"+value.ToString(), targetIP.ToString());
