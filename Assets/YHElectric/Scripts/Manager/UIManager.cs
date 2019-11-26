@@ -40,14 +40,15 @@ public class UIManager : MonoBehaviour
         transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_photovoltaic").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_photovoltaic"));
         transform.Find("bg/topBar/bg/Scroll View/Viewport/Content/D_chargingPile").GetComponent<Button>().onClick.AddListener(() => BtnClick("displayBoard" + "&" + "D_chargingPile"));
         //实时监测  monitor
+        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_panoramaEnterprise").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_panoramaEnterprise"));
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_electricRoom").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring"+"&"+ "M_electricRoom"));
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_photovoltaic").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_photovoltaic"));
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_workshop").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_workshop"));
-        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_line1").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_line1"));
-        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_line2").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_line2"));
+        //transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_line1").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_line1"));
+        //transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_line2").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_line2"));
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_streetLamp").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_streetLamp"));
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_chargingPile").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_chargingPile"));
-        transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_crane").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_crane"));
+        //transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_crane").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_crane"));
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_externalAirConditioner").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_externalAirConditioner"));
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_XMXSA").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_XMXSA"));
         transform.Find("bg/monitoring/bg/Scroll View/Viewport/Content/M_energyTank").GetComponent<Button>().onClick.AddListener(() => BtnClick("monitoring" + "&" + "M_energyTank"));
@@ -58,7 +59,8 @@ public class UIManager : MonoBehaviour
         transform.Find("bg/function/bg/Scroll View/Viewport/Content/F_marketTransaction").GetComponent<Button>().onClick.AddListener(() => BtnClick("function" + "&" + "F_marketTransaction"));
 
         //策略    strategy
-        transform.Find("bg/strategy/bg/Scroll View/Viewport/Content/S_energyAnalysis").GetComponent<Button>().onClick.AddListener(() => BtnClick("strategy" + "&" + "S_energyAnalysis"));
+        transform.Find("bg/strategy/bg/Scroll View/Viewport/Content/S_demandResponse").GetComponent<Button>().onClick.AddListener(() => BtnClick("strategy" + "&" + "S_demandResponse"));
+        transform.Find("bg/strategy/bg/Scroll View/Viewport/Content/S_executionStatistics").GetComponent<Button>().onClick.AddListener(() => BtnClick("strategy" + "&" + "S_executionStatistics"));
         //镜头操控
         transform.Find("bg/roam").GetComponent<Button>().onClick.AddListener(() => { isRoam = !isRoam; BtnClick("roam", isRoam); });
         
