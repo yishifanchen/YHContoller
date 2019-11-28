@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 18
-  productGUID: 54dcbc24acbc1ef4db4e460262da167b
+  productGUID: 539979c4a10b774488a133340a115720
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -79,7 +79,7 @@ PlayerSettings:
   submitAnalytics: 1
   usePlayerLog: 1
   bakeCollisionMeshes: 0
-  forceSingleInstance: 1
+  forceSingleInstance: 0
   useFlipModelSwapchain: 1
   resizableWindow: 0
   useMacAppStoreValidation: 0
