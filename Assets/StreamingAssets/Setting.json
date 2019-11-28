@@ -3,17 +3,6 @@
     {
       "displayBoard": [
         {
-          "D_water": {
-            "name": "水",
-            "x": "-770",
-            "y": "320",
-            "width": "380",
-            "height": "380",
-            "pivotX": "0.5",
-            "pivotY": "1",
-            "url": "http://192.168.0.123:1111/%E7%94%A8%E6%B0%B4.html",
-            "method": []
-          },
           "D_electric": {
             "name": "电",
             "x": "-512",
@@ -23,6 +12,17 @@
             "pivotX": "0.5",
             "pivotY": "1",
             "url": "http://192.168.0.123:1111/%E7%94%A8%E7%94%B5.html",
+            "method": []
+          },
+          "D_water": {
+            "name": "水",
+            "x": "-770",
+            "y": "320",
+            "width": "380",
+            "height": "380",
+            "pivotX": "0.5",
+            "pivotY": "1",
+            "url": "http://192.168.0.123:1111/%E7%94%A8%E6%B0%B4.html",
             "method": []
           },
           "D_gas": {
@@ -116,14 +116,14 @@
             "pivotY": "0.5",
             "url": "http://192.168.0.123:1111/gf&cn/chuneng.html",
             "method": [
-            	{
-            		"name":"光伏信息",
-            		"value":"1"
-            	},
-            	{
-            		"name":"一次图",
-            		"value":"2"
-            	}
+              {
+                "name": "光伏信息",
+                "value": "1"
+              },
+              {
+                "name": "一次图",
+                "value": "2"
+              }
             ]
           },
           "M_photovoltaic": {
@@ -136,14 +136,14 @@
             "pivotY": "0.5",
             "url": "http://192.168.0.123:1111/gf&cn/guangfu.html",
             "method": [
-            	{
-            		"name":"光伏信息",
-            		"value":"1"
-            	},
-            	{
-            		"name":"一次图",
-            		"value":"2"
-            	}
+              {
+                "name": "光伏信息",
+                "value": "1"
+              },
+              {
+                "name": "一次图",
+                "value": "2"
+              }
             ]
           },
           "M_workshop": {
@@ -167,14 +167,14 @@
             "pivotY": "0.5",
             "url": "http://192.168.0.123:1111/%E5%82%A8%E8%83%BD%E4%BA%91%E5%85%89%E4%BC%8F%E4%BA%91%E6%99%BA%E6%85%A7%E8%B7%AF%E7%81%AF%E7%A9%BA%E8%B0%83/kt.html",
             "method": [
-            	{
-            		"name":"实时负荷",
-            		"value":"1"
-            	},
-            	{
-            		"name":"实时电量",
-            		"value":"2"
-            	}
+              {
+                "name": "实时负荷",
+                "value": "1"
+              },
+              {
+                "name": "实时电量",
+                "value": "2"
+              }
             ]
           },
           "M_streetLamp": {
@@ -187,22 +187,22 @@
             "pivotY": "0.5",
             "url": "http://192.168.0.123:1111/%E5%82%A8%E8%83%BD%E4%BA%91%E5%85%89%E4%BC%8F%E4%BA%91%E6%99%BA%E6%85%A7%E8%B7%AF%E7%81%AF%E7%A9%BA%E8%B0%83/zhld.html",
             "method": [
-            	{
-            		"name":"运行信息",
-            		"value":"1"
-            	},
-            	{
-            		"name":"环境监测",
-            		"value":"2"
-            	},
-            	{
-            		"name":"实时负荷",
-            		"value":"3"
-            	},
-            	{
-            		"name":"实时电量",
-            		"value":"4"
-            	}
+              {
+                "name": "运行信息",
+                "value": "1"
+              },
+              {
+                "name": "环境监测",
+                "value": "2"
+              },
+              {
+                "name": "实时负荷",
+                "value": "3"
+              },
+              {
+                "name": "实时电量",
+                "value": "4"
+              }
             ]
           }
         }
@@ -263,18 +263,18 @@
             "pivotY": "0.5",
             "url": "http://192.168.0.123:1111/%E7%9B%8A%E5%92%8Ch5%E6%95%B4%E5%90%88/demand-response.html",
             "method": [
-            	{
-            		"name":"需求响应",
-            		"value":"1"
-            	},
-            	{
-            		"name":"公告信息",
-            		"value":"2"
-            	},
-            	{
-            		"name":"返回",
-            		"value":"3"
-            	}
+              {
+                "name": "需求响应",
+                "value": "1"
+              },
+              {
+                "name": "公告信息",
+                "value": "2"
+              },
+              {
+                "name": "返回",
+                "value": "3"
+              }
             ]
           },
           "F_marketTransaction": {
