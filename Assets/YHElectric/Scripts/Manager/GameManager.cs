@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour
     public Transform[] panelType;
     private Transform[] panelTypeBtnParent;
     public GameObject btnPrefab;
+    private void Awake()
+    {
+        Screen.SetResolution(1920,1080,true);
+    }
     void Start()
     {
         panelTypeBtnParent = new Transform[4];
