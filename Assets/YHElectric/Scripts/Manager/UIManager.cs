@@ -82,6 +82,7 @@ public class UIManager : MonoBehaviour
         string text = System.IO.File.ReadAllText(Application.streamingAssetsPath + "/UrlSetting.json");
         JsonData jd = JsonMapper.ToObject(text);
         targetIP = jd["URL"].ToString();
+        print(targetIP);
     }
     public void BtnClick(string str)
     {
