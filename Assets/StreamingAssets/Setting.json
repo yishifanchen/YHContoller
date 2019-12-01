@@ -266,7 +266,16 @@
             "pivotX": "0.5",
             "pivotY": "0.5",
             "url": "http://192.168.0.112:1111/%E5%A4%9A%E8%83%BD%E5%8D%8F%E5%90%8C/dnxt.html",
-            "method": []
+            "method": [
+            	{
+                "name": "第一阶段",
+                "value": "1"
+              },
+              {
+                "name": "第二阶段",
+                "value": "2"
+              }
+            ]
           },
           "S_demandResponse": {
             "name": "需求响应",
