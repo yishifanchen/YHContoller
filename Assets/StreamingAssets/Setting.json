@@ -301,20 +301,24 @@
             "url": "http://192.168.0.112:1111/%E7%A9%BA%E8%B0%83%E6%8E%A7%E5%88%B6/ktkz.html",
             "method": [
             	{
-                "name": "办公室",
+                "name": "设置温度",
                 "value": "1"
               },
               {
-                "name": "一层",
+                "name": "关闭设置",
                 "value": "2"
               },
               {
-                "name": "二层",
+                "name": "一层",
                 "value": "3"
               },
               {
-                "name": "三层",
+                "name": "二层",
                 "value": "4"
+              },
+              {
+                "name": "三层",
+                "value": "5"
               }
             ]
           },
@@ -335,13 +339,13 @@
         {
           "forecasting": {
             "name": "负荷预测",
-            "x": "0",
-            "y": "-40",
-            "width": "1850",
-            "height": "1000",
+            "x": "400",
+            "y": "435",
+            "width": "1100",
+            "height": "429",
             "pivotX": "0.5",
-            "pivotY": "0.5",
-            "url": "https://www.baidu.com/index.php?tn=monline_6_dg",
+            "pivotY": "1",
+            "url": "http://192.168.0.112:1111/%E8%B4%9F%E8%8D%B7%E9%A2%84%E6%B5%8B%E5%89%AF%E6%9C%AC.html",
             "method": []
           },
           "notice": {
