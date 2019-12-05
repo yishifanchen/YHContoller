@@ -11,7 +11,7 @@
             "height": "311",
             "pivotX": "0.5",
             "pivotY": "1",
-            "url": "http://192.168.0.112:1111/%E7%94%A8%E7%94%B5%E5%89%AF%E6%9C%AC.html",
+            "url": "http://192.168.0.112:1111/%E4%BF%AE%E6%94%B9%E9%A6%96%E9%A1%B5/%E7%94%A8%E7%94%B5.html",
             "method": []
           },
           "D_water": {
@@ -22,7 +22,7 @@
             "height": "311",
             "pivotX": "0.5",
             "pivotY": "1",
-            "url": "http://192.168.0.112:1111/%E7%94%A8%E6%B0%B4%E5%89%AF%E6%9C%AC.html",
+            "url": "http://192.168.0.112:1111/%E4%BF%AE%E6%94%B9%E9%A6%96%E9%A1%B5/%E7%94%A8%E6%B0%B4.html",
             "method": []
           },
           "D_gas": {
@@ -140,7 +140,7 @@
             "height": "829",
             "pivotX": "0.5",
             "pivotY": "0.5",
-            "url": "http://192.168.0.112:1111/%E5%8E%82%E6%88%BF%E5%89%AF%E6%9C%AC.html",
+            "url": "http://192.168.0.112:1111/%E5%8E%82%E6%88%BF/cf.html",
             "method": []
           },
           "M_externalAirConditioner": {
@@ -375,6 +375,22 @@
               {
                 "name": "关闭设置",
                 "value": "2"
+              },
+              {
+                "name": "办公楼",
+                "value": "str,4"
+              },
+              {
+                "name": "一层",
+                "value": "str,1"
+              },
+              {
+                "name": "二层",
+                "value": "str,2"
+              },
+              {
+                "name": "三层",
+                "value": "str,3"
               }
             ]
           },
@@ -449,8 +465,8 @@
             "name": "模型面板",
             "x": "0",
             "y": "80",
-            "width": "840",
-            "height": "410",
+            "width": "985",
+            "height": "623",
             "pivotX": "0.5",
             "pivotY": "0.5",
             "url": "http://192.168.0.112:1111/%E9%A6%96%E9%A1%B5.html",
