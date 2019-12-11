@@ -190,11 +190,11 @@
             "name": "能源分析",
             "x": "0",
             "y": "-40",
-            "width": "1873",
-            "height": "960",
+            "width": "1903",
+            "height": "1002",
             "pivotX": "0.5",
             "pivotY": "0.5",
-            "url": "http://192.168.0.112:1111/%E8%83%BD%E6%BA%90%E5%88%86%E6%9E%90%E5%89%AF%E6%9C%AC.html",
+            "url": "http://192.168.0.112:1111/YH/analyze.html",//http://192.168.0.112:1111/YH/analyze.html  http://192.168.0.112:1111/%E8%83%BD%E6%BA%90%E5%88%86%E6%9E%90%E5%89%AF%E6%9C%AC.html
             "method": []
           },
           "F_photovoltaicCloud": {
@@ -343,50 +343,6 @@
               {
                 "name": "独立运行",
                 "value": "8"
-              }
-            ]
-          },
-          "S_demandResponse": {
-            "name": "需求响应",
-            "x": "0",
-            "y": "-40",
-            "width": "1807",
-            "height": "975",
-            "pivotX": "0.5",
-            "pivotY": "0.5",
-            "url": "http://192.168.0.112:1111/%E9%9C%80%E6%B1%82%E5%93%8D%E5%BA%94-%E7%AD%96%E7%95%A5%E5%89%AF%E6%9C%AC.html",
-            "method": [
-            	{
-                "name": "模拟效果",
-                "value": "1"
-              },
-              {
-                "name": "执行效果",
-                "value": "2"
-              },
-              {
-                "name": "响应设备详情",
-                "value": "3"
-              }
-            ]
-          },
-          "S_marketTransaction": {
-            "name": "现货交易",
-            "x": "0",
-            "y": "-40",
-            "width": "1850",
-            "height": "1000",
-            "pivotX": "0.5",
-            "pivotY": "0.5",
-            "url": "http://192.168.0.112:1111/%E7%8E%B0%E8%B4%A7%E4%BA%A4%E6%98%93-%E7%AD%96%E7%95%A5%E5%89%AF%E6%9C%AC.html",
-            "method": [
-            	{
-                "name": "负荷跟踪",
-                "value": "1"
-              },
-              {
-                "name": "调频控制",
-                "value": "2"
               }
             ]
           },
