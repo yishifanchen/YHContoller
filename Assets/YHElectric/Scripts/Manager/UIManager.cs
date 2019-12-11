@@ -74,7 +74,7 @@ public class UIManager : MonoBehaviour
         transform.Find("bg/sidebar").GetComponent<Button>().onClick.AddListener(() => BtnClick("sidebar"));
 
         //无人机
-        //transform.Find("bg/UAV").GetComponent<Button>().onClick.AddListener(() => BtnClick("UAV"));
+        transform.Find("bg/stopAnim").GetComponent<Button>().onClick.AddListener(() => BtnClick("stopAnim"));
     }
     private void Update()
     {
