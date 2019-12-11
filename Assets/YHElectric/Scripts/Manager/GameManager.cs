@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
                             }
                         }
                         string btnType = typeDictKeys[i];
-                        go.GetComponent<Button>().onClick.AddListener(() => { UIManager.instance.BtnClick(btnType + "&" + go.name); ShowPanel(go); });
+                        go.GetComponent<Button>().onClick.AddListener(() => { UIManager.instance.BtnClick(btnType + "&" + go.name); ShowPanel(go,go.name); });
                     }
                     h5Info[j] = new H5Info
                     {
@@ -101,12 +101,13 @@ public class GameManager : MonoBehaviour
             Debug.Log(e.ToString());
         }
     }
-    void ShowPanel(GameObject go)
+    void ShowPanel(GameObject go,string name)
     {
         if (go.GetComponent<FunctionInfo>() != null)
         {
             FunctionInfo functionInfo = go.GetComponent<FunctionInfo>();
             PopPanel.instance.transform.gameObject.SetActive(true);
+            PopPanel.instance.btnName = name;
             foreach (string key in functionInfo.funcInfo.Keys)
             {
                 GameObject g = Instantiate(btnPrefab);
