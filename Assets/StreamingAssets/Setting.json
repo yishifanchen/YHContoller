@@ -276,7 +276,16 @@
             "pivotX": "0.5",
             "pivotY": "0.5",
             "url": "http://192.168.0.112:1111/%E7%8E%B0%E8%B4%A7%E4%BA%A4%E6%98%93-%E5%8A%9F%E8%83%BD%E5%89%AF%E6%9C%AC.html",
-            "method": []
+            "method": [
+            	{
+              	"name": "现货交易",
+                "value": "1"
+              },
+              {
+                "name": "执行策略",
+                "value": "2"
+              }
+            ]
           }
         }
       ],
