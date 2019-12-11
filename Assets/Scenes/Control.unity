@@ -6476,7 +6476,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0006642414}
+  m_AnchoredPosition: {x: 0, y: 0.000026152518}
   m_SizeDelta: {x: 0, y: 783}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &813219283
@@ -10408,7 +10408,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u65E0\u4EBA\u673A"
+  m_Text: "\u542F/\u505C"
 --- !u!222 &1201681851
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15033,12 +15033,12 @@ GameObject:
   - component: {fileID: 1830420318}
   - component: {fileID: 1830420317}
   m_Layer: 5
-  m_Name: UAV
+  m_Name: stopAnim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1830420316
 RectTransform:
   m_ObjectHideFlags: 0
