@@ -257,7 +257,14 @@
             "pivotY": "0.5",
             "url": "http://192.168.0.112:1111/%E9%9C%80%E6%B1%82%E5%93%8D%E5%BA%94-%E5%8A%9F%E8%83%BD%E5%89%AF%E6%9C%AC.html",
             "method": [
-
+              {
+              	"name": "需求响应",
+                "value": "1"
+              },
+              {
+                "name": "响应策略",
+                "value": "2"
+              },
             ]
           },
           "F_marketTransaction": {
@@ -427,7 +434,7 @@
             "height": "1000",
             "pivotX": "0.5",
             "pivotY": "0.5",
-            "url": "http://192.168.0.112:1111/%E5%A4%9A%E8%83%BD%E5%8D%8F%E5%90%8C/%E7%94%9F%E4%BA%A7%E7%BA%BF%E7%AD%96%E7%95%A5.html",
+            "url": "http://192.168.0.112:1111/%E7%94%9F%E4%BA%A7%E7%BA%BF%E7%AD%96%E7%95%A5%E5%89%AF%E6%9C%AC.html",
             "method": []
           }
         }
